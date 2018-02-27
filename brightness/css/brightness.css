@@ -1,0 +1,32 @@
+.output {
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: red;
+}
+
+.text {
+	font-size: 270px;
+	font-size: 20vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	color: red;
+	position: relative;
+	}
+
+.optical-elzevir {
+	font-family: 'optical-elzevir';
+}
+
+.optical-elzevir-default {
+	font-family: 'optical-elzevir-default';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: .3;
+	color: blue;
+	/*z-index: -1;*/
+}

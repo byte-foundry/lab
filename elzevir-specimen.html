@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="elzevir-specimen/css/elzevir.css@=v7895421.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<title>Interactive Specimen of the parametric font Prototypo Elzevir</title>
+		<meta name="description" content="Prototypo Elzevir is the third parametric font in Prototypo" />
+	</head>
+	<body>
+
+		<div class="zoom">
+			<span id="zoom-out">-</span>
+			<span id="zoom-in">+</span>
+		</div>
+
+		<div class="container">
+
+			<div class="wrap main">
+
+				<img class="cursor" src="elzevir-specimen/img/cursor.svg" alt="" />
+
+				<div class="informations">
+					<img src="elzevir-specimen/img/informations.svg" alt="">
+				</div>
+
+				<div class="elzevir small red">
+					New release
+					<br/>—
+				</div>
+				<div class="elzevir medium">
+					Prototypo Elzevir
+				</div>
+				<div class="elzevir-bold">
+					One of the many Elzevirs published by French foundry Renaud during the first wave of revivals in the late 19<sup>th</sup> century.
+					<div class="value">Thickness <span class="int">140</span></div>
+				</div>
+				<div class="elzevir-sans">
+					COMES WITH MORE THAN 25 PARAMETERS
+					<div class="value">Height <span class="int h">700</span> - Thickness <span class="int t">90</span>  - Width <span class="int w">1</span></div>
+				</div>
+				<div class="elzevir-book large black">
+					elz
+					<div class="value">Thickness <span class="int t">80</span> — Width <span class="int w">1</span> — Serif Height <span class="int sh">15</span></div>
+				</div>
+				<div class="elzevir-book">
+					The web application Prototypo gives anyone the possibility to create personalized fonts and export them to use on their website or desktop application such as Word or InDesign.
+				</div>
+				<div class="elzevir">
+					Try this font at <a class="link red" href="https://www.prototypo.io">www.prototypo.io</a>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div id="loading" class="">
+			<div class="wrap grotesk">
+				<div><img src="elzevir-specimen/img/logo_prototypo.jpg" width="128" alt=""></div>
+				<p>
+					Hi! Please wait a few seconds, we are generating <span>3 interactive fonts</span> based on our new <span>Prototypo Elzevir</span> font template. We do this magic trick using our libs <span>plumin.js</span> + <span>prototypo.js</span> to generate fonts in real time.
+				</p>
+				<p>
+					<ul>
+						<li id="elzevir-book">Prototypo Elzevir Book <span class="loading red"><img width="20" src="elzevir-specimen/img/ellipsis.gif" alt=""></span></li>
+						<li id="elzevir-bold">Prototypo Elzevir Bold <span class="loading red"><img width="20" src="elzevir-specimen/img/ellipsis.gif" alt=""></span></li>
+						<li id="elzevir-sans">Prototypo Elzevir Sans <span class="loading red"><img width="20" src="elzevir-specimen/img/ellipsis.gif" alt=""></span></li>
+					</ul>
+				</p>
+			</div>
+		</div>
+
+		<canvas id="canvas" style="display:none;"></canvas>
+		<script src="elzevir-specimen/prototypo.js"></script>
+		<script src="elzevir-specimen/prototypo-canvas.js"></script>
+		<script src="elzevir-specimen/src/lib-elzevir.js@=v7545455454"></script>
+		<script src="elzevir-specimen/src/elzevir.js@=v7545454"></script>
+
+		<footer>
+			<style media="screen">
+				footer {
+					position: fixed;
+					bottom: 10px;
+					right: 10px;
+					width: 100px;
+					text-align: right;
+				}
+			</style>
+			<div id="facebook" class="fb-share-button" data-href="" data-layout="button" style="margin-bottom: 5px;"></div>
+			<a 	id="twitter"
+				class="twitter-share-button"
+				href="elzevir-specimen.html"
+				data-size="large">
+				Tweet</a>
+
+			<script>
+				document.getElementById("twitter").setAttribute("href", "https://twitter.com/intent/tweet?text=" + document.title + " — via @prototypoApp" );
+				window.twttr = (function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0],
+						t = window.twttr || {};
+					if (d.getElementById(id)) return t;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "https://platform.twitter.com/widgets.js";
+					fjs.parentNode.insertBefore(js, fjs);
+
+					t._e = [];
+					t.ready = function(f) {
+						t._e.push(f);
+					};
+
+					return t;
+				}(document, "script", "twitter-wjs"));
+			</script>
+
+			<div id="fb-root"></div>
+			<script>
+				document.getElementById("facebook").setAttribute("href", window.location.href );
+				(function(d, s, id) {
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s);
+					js.id = id;
+					js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+			<script type="text/javascript">
+			var ua = navigator.userAgent.toLowerCase();
+			console.log(ua);
+			if (ua.indexOf('chrome') === -1 && ua.indexOf('firefox') === -1 ) {
+				alert('Your browser does not support technologies we use in our lab. Please use Chrome or Firefox latest versions.');
+			}
+			</script>
+
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-41962243-1', 'prototypo.io');
+			  ga('send', 'pageview');
+
+			</script>
+		</footer>
+	</body>
+</html>

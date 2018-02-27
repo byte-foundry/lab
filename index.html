@@ -1,0 +1,102 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab of Prototypo, customize and create own font. Quick experiences around typography and more.</title>
+    <meta name="description" content="Lab of Prototypo">
+	<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  </head>
+  <style media="screen">
+  	.links a { font-size: 36px; font-size: 8vw; color: #fff; font-family: 'Fjalla One', sans-serif; text-transform: uppercase; margin-right: 0.2em; }
+	.links a:hover { color: #000; }
+	html, body {
+		background: -webkit-linear-gradient(left top, #f96752, #f95267);
+		background: linear-gradient(to right bottom, #f96752, #f95267);
+	}
+  </style>
+  <body>
+	<header>
+
+	</header>
+	<div class="links">
+		<a href="clock.html">clock</a>
+		<a href="https://vimeo.com/158214546">Yahoo weather API</a>
+		<a href="brightness.html">stem VS background-color</a>
+		<a href="whistle.html">whistle</a>
+		<a href="elzevir-specimen.html">Elzevir specimen</a>
+		<a href="smartFont.html">Smart font</a>
+	</div>
+
+	<footer>
+		<style media="screen">
+			footer {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				width: 100px;
+				text-align: right;
+			}
+		</style>
+		<div id="facebook" class="fb-share-button" data-href="" data-layout="button" style="margin-bottom: 5px;"></div>
+		<a 	id="twitter"
+			class="twitter-share-button"
+			href="index.html"
+			data-size="large">
+			Tweet</a>
+
+		<script>
+			document.getElementById("twitter").setAttribute("href", "https://twitter.com/intent/tweet?text=" + document.title + " — via @prototypoApp" );
+			window.twttr = (function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0],
+					t = window.twttr || {};
+				if (d.getElementById(id)) return t;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "https://platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js, fjs);
+
+				t._e = [];
+				t.ready = function(f) {
+					t._e.push(f);
+				};
+
+				return t;
+			}(document, "script", "twitter-wjs"));
+		</script>
+
+		<div id="fb-root"></div>
+		<script>
+			document.getElementById("facebook").setAttribute("href", window.location.href );
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<script type="text/javascript">
+		var ua = navigator.userAgent.toLowerCase();
+		console.log(ua);
+		if (ua.indexOf('chrome') === -1 && ua.indexOf('firefox') === -1 ) {
+			alert('Your browser does not support technologies we use in our lab. Please use Chrome or Firefox latest versions.');
+		}
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-41962243-1', 'prototypo.io');
+		  ga('send', 'pageview');
+
+		</script>
+	</footer>
+
+
+
+  </body>
+</html>

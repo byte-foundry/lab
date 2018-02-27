@@ -1,0 +1,165 @@
+@font-face {
+	font-family: 'Elzevir';
+	src: url('../fonts/elzevir.otf');
+}
+
+@font-face {
+	font-family: 'Prototypo Grotesk';
+	src: url('../fonts/grotesk.otf');
+}
+
+.elzevir {
+	font-family: 'Elzevir';
+}
+
+.grotesk {
+	font-family: 'Prototypo Grotesk', sans-serif;
+	font-size: 30px;
+	line-height: 1.4;
+	letter-spacing: -0.02em;
+	color: black;
+	max-width: 800px;
+	margin: 200px auto;
+}
+
+.grotesk span {
+	color: #FF725E;
+}
+
+.elzevir-book {
+	font-family: 'elzevir-book';
+}
+.elzevir-bold {
+	font-family: 'elzevir-bold';
+}
+.elzevir-sans {
+	font-family: 'elzevir-sans';
+	letter-spacing: .05em;
+}
+
+
+
+body {
+	background-color: #ECEAE5;
+	text-align: center;
+	font-size: 24px;
+	color: #4D4D4D;
+}
+
+#loading {
+	padding: 1em 3em;
+	background-color: #ECEAE5;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-align: left;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	margin: 10px 0;
+	list-style: none;
+}
+
+li::before {
+	content: "—";
+	color: #49E4A9;
+	margin-right: .5em;
+}
+
+li span {
+	margin-left: 10px;
+}
+
+.informations {
+	position: absolute;
+	top: -110px;
+	left: -150px;
+	z-index: 1;
+}
+
+.zoom {
+	position: relative;
+	/*top: - 20px;
+	right: 20px;*/
+	display: inline-flex;
+}
+
+.zoom span {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	border: 2px solid #FF725E;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5px;
+	border-radius: 50%;
+	color: #FF725E;
+	font-size: 14px;
+}
+.zoom span:hover {
+	background-color: #FF725E;
+	color: white;
+	cursor: pointer;
+}
+
+.wrap {
+	position: relative;
+	background-color: white;
+	padding: 50px;
+	text-align: center;
+	max-width: 800px;
+	margin: 200px auto;
+	box-shadow: 5px 5px 20px #ccc;
+}
+
+.main {
+	border-left: 10px solid #49E4A9;
+}
+
+.wrap div {
+	margin-bottom: 40px;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.red {
+	color: #FF725E;
+}
+
+.black {
+	color: #333333;
+}
+
+.value {
+	color: #FF725E;
+	font-size: 10px;
+	font-family: "Prototypo Grotesk", "Lucida Console", Monaco, monospace;
+	letter-spacing: .06em;
+	margin-top: 10px;
+}
+
+.small {
+	font-size: 30px;
+}
+.medium {
+	font-size: 64px;
+}
+.large {
+	font-size: 350px;
+}
+
+.cursor {
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 47px);
+}

@@ -1,0 +1,17 @@
+/* Fonts */
+.grotesk {
+	font-family: 'grotesk';
+	color: #333;
+	font-size: 10em;
+}
+
+body {
+	background-color: #eee;
+}
+
+#clock {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 95vh;
+}

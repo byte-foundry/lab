@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Parametric-Smart-Variable fonts using Prototypo</title>
+		<link rel="stylesheet" href="smartFont/css/atypi2016.css"></link>
+		<script src="smartFont/src/jquery.js"></script>
+		<!-- <script src="src/ccv.js"></script> -->
+		<!-- <script src="src/cascade.js"></script> -->
+		<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	</head>
+	<body>
+
+		<form id="environment" action="smartFont.html">
+			<label><input type="radio" name="environment" value="normal" checked="checked"> Normal</label><br>
+			<label><input type="radio" name="environment" value="display"> Display</label><br>
+			<label><input type="radio" name="environment" value="condensed"> Smaller column</label><br>
+			<label><input type="radio" name="environment" value="extended"> wi(l)der column</label><br>
+			<label><input type="radio" name="environment" value="black"> Blackground</label><br>
+			<label><input type="radio" name="environment" value="caption"> Caption</label><br>
+			<label><input type="radio" name="environment" value="night"> Night mode</label><br>
+			<!-- <label><input type="radio" name="environment" value="distance"> Distance</label> -->
+		</form>
+
+		<div class="shortcut">
+			Press <i>z</i> to toggle zoom<br/>
+			Press <i>space</i> to compare to the initial variant
+		</div>
+
+		<div class="wrap">
+			<div class="item elzevir-book">
+				<div class="top big">
+					<div class="elzevir-static compare">A</div>
+					A
+				</div>
+				<div class="middle">
+					<div class="elzevir-static compare">HANOGRES</div>
+					HANOGRES
+				</div>
+				<div class="bottom">
+					<div class="elzevir-static compare">hamburgefonstiv</div>
+					hamburgefonstiv
+				</div>
+			</div>
+			<div class="item elzevir-book captionView">
+				<div class="top big">A</div>
+				<div class="middle">HANOGRES</div>
+				<div class="bottom">hamburgefonstiv</div>
+			</div>
+		</div>
+
+		<div class="gelatine"></div>
+
+		<div class="params"></div>
+
+
+		<!-- <video style="display: none;"></video>
+		<canvas style="display: none;" width="266" height="200"></canvas>
+		<button style="margin: 0 2em;">Start camera</button> -->
+
+		<script type="text/javascript">
+		var ua = navigator.userAgent.toLowerCase();
+		console.log(ua);
+		if (ua.indexOf('chrome') === -1 && ua.indexOf('firefox') === -1 ) {
+			alert('Your browser does not support technologies we use in our lab. Please use Chrome or Firefox latest versions.');
+		}
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-41962243-1', 'prototypo.io');
+		  ga('send', 'pageview');
+
+		</script>
+
+	</body>
+
+	<canvas id="canvas" style="display:none;"></canvas>
+	<script src="smartFont/prototypo.js"></script>
+	<script src="smartFont/prototypo-canvas.js"></script>
+	<script src="smartFont/src/lib-atypi2016.js"></script>
+	<script src="smartFont/src/atypi2016.js"></script>
+
+
+				<footer>
+					<style media="screen">
+						footer {
+							position: absolute;
+							bottom: 80px;
+							right: 20px;
+							width: 100px;
+							text-align: right;
+						}
+					</style>
+					<div id="facebook" class="fb-share-button" data-href="" data-layout="button" style="margin-bottom: 5px;"></div>
+					<a 	id="twitter"
+						class="twitter-share-button"
+						href="smartFont.html"
+						data-size="large">
+						Tweet</a>
+
+					<script>
+						document.getElementById("twitter").setAttribute("href", "https://twitter.com/intent/tweet?text=" + document.title + " — via @prototypoApp" );
+						window.twttr = (function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0],
+								t = window.twttr || {};
+							if (d.getElementById(id)) return t;
+							js = d.createElement(s);
+							js.id = id;
+							js.src = "https://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+
+							t._e = [];
+							t.ready = function(f) {
+								t._e.push(f);
+							};
+
+							return t;
+						}(document, "script", "twitter-wjs"));
+					</script>
+
+					<div id="fb-root"></div>
+					<script>
+						document.getElementById("facebook").setAttribute("href", window.location.href );
+						(function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0];
+							if (d.getElementById(id)) return;
+							js = d.createElement(s);
+							js.id = id;
+							js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5";
+							fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));
+					</script>
+					<script type="text/javascript">
+					var ua = navigator.userAgent.toLowerCase();
+					console.log(ua);
+					if (ua.indexOf('chrome') === -1 && ua.indexOf('firefox') === -1 ) {
+						alert('Your browser does not support technologies we use in our lab. Please use Chrome or Firefox latest versions.');
+					}
+					</script>
+
+					<script>
+					  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					  ga('create', 'UA-41962243-1', 'prototypo.io');
+					  ga('send', 'pageview');
+
+					</script>
+				</footer>
+
+
+	</body>
+	</html
